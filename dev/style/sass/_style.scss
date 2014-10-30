@@ -1,0 +1,46 @@
+* {
+	font-size: $font-size;
+	line-height: $line-height;
+
+	@include box-sizing(border-box);
+}
+
+header {
+
+	.brand-icon {
+		@include outer-container();
+		@include hide-text;
+
+		background-image: url(../images/btl-header.png);
+
+		margin: 0 auto;
+
+		width: 709px;
+		height: 250px;
+	}
+
+	nav {
+		background-color: $purple;
+
+		ul {
+			@include outer-container();
+			
+			list-style: none;
+			text-align: center;
+
+			li {
+				@include span-columns(1 of 5);
+				
+				padding: 1em 0;
+
+				a {
+					padding: 1em 0;
+
+					text-decoration: none;
+
+					color: #fff;
+				}
+			}
+		}
+	}
+}
