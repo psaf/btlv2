@@ -379,21 +379,14 @@ header nav {
         color: #fff; }
         header nav ul li a:hover {
           background-color: #9a6790; }
-header .hero {
-  height: 50vh;
-  max-height: 50vh;
-  background-color: #000; }
-  header .hero h2 {
-    position: relative;
-    top: 20%;
-    color: #fff; }
 
 .hero {
   background: url('../images/backgrounds/header.jpg'), -webkit-linear-gradient(-280deg, #5413a2, #a21348), no-repeat #a21348 scroll;
   background: url('../images/backgrounds/header.jpg'), -webkit-linear-gradient(80deg, #5413a2, #a21348), no-repeat #a21348 scroll;
   background: url('../images/backgrounds/header.jpg'), linear-gradient(10deg, #5413a2, #a21348), no-repeat #a21348 scroll;
   background-repeat: no-repeat;
-  background-position: top;
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
   padding-bottom: 4em; }
   .hero .hero-logo img {
@@ -462,3 +455,41 @@ header .hero {
           .hero .hero-inner .hero-copy p {
             font-size: 1.1em;
             max-width: 40%; } }
+
+.content {
+  margin-top: 3em;
+  margin-bottom: 3em; }
+  .content .content-inner {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .content .content-inner:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .content .section-heading {
+    height: 1.5em;
+    margin-bottom: 1em;
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover; }
+
+#projects .project {
+  float: left;
+  display: block;
+  margin-right: 7.42297%;
+  width: 19.43277%; }
+  #projects .project:last-child {
+    margin-right: 0; }
+  #projects .project a {
+    display: block;
+    width: 200px;
+    height: 200px; }
+
+#services .section-heading {
+  background-image: url(../images/backgrounds/services.jpg); }

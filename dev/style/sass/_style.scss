@@ -53,21 +53,6 @@ header {
 			}
 		}
 	}
-
-	.hero {
-		height: 50vh;
-		max-height: 50vh;
-
-		background-color: #000;
-
-		h2 { 
-			position: relative;
-
-			top: 20%;
-
-			color: #fff;
-		}
-	}
 }
 
 .hero {
@@ -86,8 +71,10 @@ header {
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
 
   background-repeat: no-repeat;
-  background-position: top;
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
+  
   padding-bottom: 4em;
 
   .hero-logo img {
@@ -137,3 +124,47 @@ header {
   }
 }
 
+.content {
+
+	margin-top: 3em;
+	margin-bottom: 3em;
+
+	.content-inner {
+		@include outer-container;
+	}
+
+	.section-heading {
+		height: 1.5em;
+		margin-bottom: 1em;
+		
+		color: #fff;
+		
+		font-size: 4em;
+		line-height: 1.5em;
+		text-transform: uppercase;
+		text-align: center;
+	
+		background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+	}
+}
+
+#projects {
+	.project {
+		@include span-columns(1 of 4);
+
+		a {
+			display: block;
+			width: 200px;
+			height: 200px;
+		}
+	
+	}
+}
+
+#services {
+	.section-heading {
+		background-image: url(../images/backgrounds/services.jpg);
+	}
+}
