@@ -334,6 +334,12 @@ td, th {
 h1, h2, h3, h4, h5 {
   font-family: 'ff-tisa-web-pro', 'Times New Roman', serif; }
 
+h3 {
+  font-size: 1.5em; }
+
+p {
+  color: #222; }
+
 header .brand-icon {
   max-width: 68em;
   margin-left: auto;
@@ -450,7 +456,8 @@ header nav {
         margin: auto;
         margin-bottom: 3em;
         font-weight: 200;
-        line-height: 1.4em; }
+        line-height: 1.4em;
+        color: #fff; }
         @media screen and (min-width: 900px) {
           .hero .hero-inner .hero-copy p {
             font-size: 1.1em;
@@ -493,3 +500,33 @@ header nav {
 
 #services .section-heading {
   background-image: url(../images/backgrounds/services.jpg); }
+#services .service {
+  float: left;
+  display: block;
+  margin-right: 7.42297%;
+  width: 19.43277%;
+  margin-bottom: 8px;
+  border-bottom: 8px solid #4e3449; }
+  #services .service:last-child {
+    margin-right: 0; }
+  #services .service [class^="icon-"], #services .service [class*=" icon-"] {
+    font-size: 6em;
+    color: #ea4a86; }
+  #services .service .icon {
+    margin: 0 auto;
+    padding: 1em;
+    width: 8.5em;
+    height: 8.5em;
+    text-align: center;
+    background-color: #FFF;
+    border: 3px solid #4e3449;
+    border-radius: 50%; }
+  #services .service .service-header {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4e3449; }
+  #services .service .service-content {
+    text-align: justify; }
+
+#about .section-heading {
+  background-image: url(../images/backgrounds/about.jpg); }

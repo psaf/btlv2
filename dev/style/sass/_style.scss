@@ -3,12 +3,20 @@
 	line-height: $line-height;
 
 	font-family: 'proxima-nova', Arial, Helvetica, sans-serif;
-
+	
 	@include box-sizing(border-box);
 }
 
 h1, h2, h3, h4, h5 {
 	font-family: 'ff-tisa-web-pro', 'Times New Roman', serif;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+p {
+	color: #222;
 }
 
 header {
@@ -74,7 +82,7 @@ header {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  
+
   padding-bottom: 4em;
 
   .hero-logo img {
@@ -114,6 +122,8 @@ header {
         margin-bottom: 3em; 
         font-weight: 200;
         line-height: 1.4em;
+
+        color: #fff;
 
         @include media($large-screen) {
           font-size: 1.1em;
@@ -166,5 +176,50 @@ header {
 #services {
 	.section-heading {
 		background-image: url(../images/backgrounds/services.jpg);
+	}
+
+	.service {
+		@include span-columns(1 of 4);
+
+		margin-bottom: 8px;
+		
+		border-bottom: 8px solid $purple;
+
+		[class^="icon-"], [class*=" icon-"] {
+			font-size: 6em;
+
+			color: #ea4a86;
+		}
+
+		.icon {
+			margin: 0 auto;
+			padding: 1em;
+			width: 8.5em;
+			height: 8.5em;
+
+			text-align: center;
+			
+			background-color: #FFF;
+
+			border: 3px solid $purple;
+			border-radius: 50%;
+		}
+
+		.service-header {
+			text-align: center;
+			text-transform: uppercase;
+
+			color: $purple;
+		}
+
+		.service-content {
+			text-align: justify;
+		}
+	}
+}
+
+#about {
+	.section-heading {
+		background-image: url(../images/backgrounds/about.jpg);
 	}
 }
