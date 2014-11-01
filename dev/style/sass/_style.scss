@@ -194,6 +194,11 @@ header {
 		} 
 	}
 
+	.strategies {
+		@include clearfix;
+		margin-bottom: 5em;
+	}
+
 	.strategy {
 		@include span-columns(1 of 4);
 
@@ -230,6 +235,60 @@ header {
 
 		.strategy-content {
 			text-align: justify;
+		}
+	}
+
+	.the-team {
+		@include clearfix;
+		margin-bottom: 5em;
+	}
+
+	.team-member {
+		@include span-columns(1 of 4);
+
+		margin-bottom: 8px;
+		
+		border-bottom: 8px solid $purple;
+
+		[class^="icon-"], [class*=" icon-"] {
+			font-size: 6em;
+
+			color: #ea4a86;
+		}
+
+		.icon {
+				margin: 0 auto;
+
+				height: 10em;
+				width: 10em;
+
+			img {
+				border: 3px solid $purple;
+				border-radius: 50%;
+
+				height: 10em;
+				width: 10em;
+			}
+		}
+
+		.team-member-name {
+			text-align: center;
+			text-transform: uppercase;
+
+			color: $purple;
+		}
+
+		.team-member-content {
+			text-align: justify;
+		}
+
+		button {
+			@include button(simple, $base-background-color);
+			margin-bottom: 1em;
+			margin-left: 3.5em;
+
+	      	font-size: $base-font-size;
+	      	outline: none;
 		}
 	}
 }
