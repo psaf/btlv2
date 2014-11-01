@@ -1,6 +1,38 @@
 //Colours
 $purple: #4e3449;
+$pink: #ea4a86;
 
 //Font
 $font-size: 16px;
 $line-height: 1.5em;
+
+//Hero
+$serif: 'proxima-nova';
+$large-screen: 900px;
+$medium-screen: 500px;
+$base-font-size: $font-size;
+$base-accent-color: $pink;
+$base-background-color: $purple;
+$hero-background-top: darken($base-accent-color, 25); 
+$hero-background-bottom: adjust-hue($hero-background-top, -70);
+$hero-color: white;
+$gradient-angle: 10deg;
+$hero-image: '../images/backgrounds/header.jpg';
+
+//Grid
+$base-font-color: #222;
+$grid-items-background: $base-background-color;
+$grid-item-background: desaturate($base-accent-color, 30); 
+$grid-item-colors: 
+desaturate($base-accent-color, 30), 
+#3581A5, 
+#5FBEBE,
+#98C79A,
+#A7A891, 
+#BDCC97,
+#979EA0;
+$grid-item-border-size: 9px;
+$grid-item-columns: 4;
+$grid-item-big-columns: 8;
+$grid-item-color: white;
+$grid-item-height: 14em;
