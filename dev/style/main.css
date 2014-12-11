@@ -485,6 +485,10 @@ header nav {
   border-bottom: 8px solid #4e3449; }
   #about .team-member:last-child {
     margin-right: 0; }
+  #about .team-member:nth-child(4n) {
+    margin-right: 0; }
+  #about .team-member:nth-child(4n+1) {
+    clear: left; }
   #about .team-member [class^="icon-"], #about .team-member [class*=" icon-"] {
     font-size: 6em;
     color: #ea4a86; }

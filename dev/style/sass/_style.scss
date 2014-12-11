@@ -190,6 +190,7 @@ header {
 
 	.team-member {
 		@include span-columns(1 of 4);
+		@include omega(4n);
 
 		margin-bottom: 8px;
 		
