@@ -122,6 +122,8 @@ header {
 		@include span-columns(1 of 2);
 		@include omega(2n);
 
+		position: relative;
+
 		margin-bottom: 8px;
 		
 		// border-bottom: 8px solid $purple;
@@ -129,7 +131,10 @@ header {
 		overflow: hidden;
 
 		[class^="icon-"], [class*=" icon-"] {
-			font-size: 6em;
+			position: absolute;
+			top: .8em;
+			right: .2em;
+			font-size: 3em;
 
 			color: #ea4a86;
 		}
@@ -148,16 +153,14 @@ header {
 			border-radius: 50%;
 		}
 
-		.service-header {
-			text-align: center;
-			text-transform: uppercase;
+		// span {
+		// 	position: absolute;
+		// 	top: 50%;
+		// 	left: 50%;
+		// 	opacity: .5;
 
-			color: $purple;
-		}
-
-		.service-content {
-			text-align: justify;
-		}
+		// 	font-size: 10em;
+		// }
 	}
 }
 
@@ -170,8 +173,6 @@ header {
 		@include span-columns(6);
 		@include shift(3);
 		@include omega;
-
-		@include clearfix;
 	}
 
 	.section-inner-heading {
@@ -180,73 +181,6 @@ header {
 		text-align: center;
 
 		// border-bottom: 1px solid lighten($base-font-color, 20);
-	}
-
-	.philosophies {
-		@include clearfix;
-		margin-bottom: 5em;
-	}
-
-	.philosophy {
-		@include span-columns(1 of 2);
-
-		text-align: center;
-
-		border-bottom: 3px solid $purple;
-		
-		h3 {
-			text-transform: uppercase;
-
-			color: $purple;
-		}
-
-		&:nth-child(2n+2) {
-			@include omega;
-		} 
-	}
-
-	.strategies {
-		@include clearfix;
-		margin-bottom: 5em;
-	}
-
-	.strategy {
-		@include span-columns(1 of 4);
-
-		margin-bottom: 8px;
-		
-		border-bottom: 8px solid $purple;
-
-		[class^="icon-"], [class*=" icon-"] {
-			font-size: 6em;
-
-			color: #ea4a86;
-		}
-
-		.icon {
-			margin: 0 auto;
-			padding: 1em;
-			width: 8.5em;
-			height: 8.5em;
-
-			text-align: center;
-			
-			background-color: #FFF;
-
-			border: 3px solid $purple;
-			border-radius: 50%;
-		}
-
-		.strategy-header {
-			text-align: center;
-			text-transform: uppercase;
-
-			color: $purple;
-		}
-
-		.strategy-content {
-			text-align: justify;
-		}
 	}
 
 	.the-team {

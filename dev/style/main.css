@@ -431,6 +431,7 @@ header nav {
   display: block;
   margin-right: 16.03631%;
   width: 41.98184%;
+  position: relative;
   margin-bottom: 8px;
   overflow: hidden; }
   #services .service:last-child {
@@ -440,7 +441,10 @@ header nav {
   #services .service:nth-child(2n+1) {
     clear: left; }
   #services .service [class^="icon-"], #services .service [class*=" icon-"] {
-    font-size: 6em;
+    position: absolute;
+    top: 0.8em;
+    right: 0.2em;
+    font-size: 3em;
     color: #ea4a86; }
   #services .service .icon {
     margin: 0 auto;
@@ -451,12 +455,6 @@ header nav {
     background-color: #FFF;
     border: 3px solid #4e3449;
     border-radius: 50%; }
-  #services .service .service-header {
-    text-align: center;
-    text-transform: uppercase;
-    color: #4e3449; }
-  #services .service .service-content {
-    text-align: justify; }
 
 #about .section-heading {
   background-image: url(../images/backgrounds/about.jpg); }
@@ -469,66 +467,9 @@ header nav {
   margin-right: 0; }
   #about .aboutus-content:last-child {
     margin-right: 0; }
-  #about .aboutus-content:after {
-    content: "";
-    display: table;
-    clear: both; }
 #about .section-inner-heading {
   padding-bottom: 0.5em;
   text-align: center; }
-#about .philosophies {
-  margin-bottom: 5em; }
-  #about .philosophies:after {
-    content: "";
-    display: table;
-    clear: both; }
-#about .philosophy {
-  float: left;
-  display: block;
-  margin-right: 16.03631%;
-  width: 41.98184%;
-  text-align: center;
-  border-bottom: 3px solid #4e3449; }
-  #about .philosophy:last-child {
-    margin-right: 0; }
-  #about .philosophy h3 {
-    text-transform: uppercase;
-    color: #4e3449; }
-  #about .philosophy:nth-child(2n+2) {
-    margin-right: 0; }
-#about .strategies {
-  margin-bottom: 5em; }
-  #about .strategies:after {
-    content: "";
-    display: table;
-    clear: both; }
-#about .strategy {
-  float: left;
-  display: block;
-  margin-right: 7.42297%;
-  width: 19.43277%;
-  margin-bottom: 8px;
-  border-bottom: 8px solid #4e3449; }
-  #about .strategy:last-child {
-    margin-right: 0; }
-  #about .strategy [class^="icon-"], #about .strategy [class*=" icon-"] {
-    font-size: 6em;
-    color: #ea4a86; }
-  #about .strategy .icon {
-    margin: 0 auto;
-    padding: 1em;
-    width: 8.5em;
-    height: 8.5em;
-    text-align: center;
-    background-color: #FFF;
-    border: 3px solid #4e3449;
-    border-radius: 50%; }
-  #about .strategy .strategy-header {
-    text-align: center;
-    text-transform: uppercase;
-    color: #4e3449; }
-  #about .strategy .strategy-content {
-    text-align: justify; }
 #about .the-team {
   margin-bottom: 5em; }
   #about .the-team:after {
