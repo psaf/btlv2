@@ -32,6 +32,8 @@
     margin-bottom: $base-spacing*2;
     list-style-type: none;
 
+    margin-left: .8em;
+
     @include media($medium-screen) {
       @include span-columns(5);
       @include omega(2n);
@@ -40,11 +42,16 @@
   }
 
   li {
-    text-align: center;
-
+    text-align: right;
 
     @include media($medium-screen) {
       // text-align: left;
+    }
+  }
+  ul:last-child {
+    margin-left: 0;
+    li {
+      text-align: left;
     }
   }
 

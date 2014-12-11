@@ -859,7 +859,8 @@ header nav {
         margin-left: 8.5298%; } }
   .footer ul {
     margin-bottom: 2em;
-    list-style-type: none; }
+    list-style-type: none;
+    margin-left: 0.8em; }
     @media screen and (min-width: 500px) {
       .footer ul {
         float: left;
@@ -877,7 +878,11 @@ header nav {
           display: table;
           clear: both; } }
   .footer li {
-    text-align: center; }
+    text-align: right; }
+  .footer ul:last-child {
+    margin-left: 0; }
+    .footer ul:last-child li {
+      text-align: left; }
   .footer li a {
     color: rgba(255, 255, 255, 0.4); }
     .footer li a:hover {
