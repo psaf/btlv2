@@ -367,6 +367,7 @@ header nav {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
+    margin-left: 25.58941%;
     list-style: none;
     text-align: center;
     margin-bottom: 0; }
@@ -377,10 +378,14 @@ header nav {
     header nav ul li {
       float: left;
       display: block;
-      margin-right: 10.1484%;
-      width: 26.56773%; }
+      margin-right: 4.82916%;
+      width: 12.64237%; }
       header nav ul li:last-child {
         margin-right: 0; }
+      header nav ul li:nth-child(4n) {
+        margin-right: 0; }
+      header nav ul li:nth-child(4n+1) {
+        clear: left; }
       header nav ul li a {
         display: block;
         padding: 1em 0;
@@ -389,28 +394,25 @@ header nav {
         header nav ul li a:hover {
           background-color: #9a6790; }
 
-.content {
-  margin-top: 3em;
-  margin-bottom: 3em; }
-  .content .content-inner {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
-    .content .content-inner:after {
-      content: "";
-      display: table;
-      clear: both; }
-  .content .section-heading {
-    height: 1.5em;
-    margin-bottom: 1em;
-    color: #fff;
-    font-size: 4em;
-    line-height: 1.5em;
-    text-transform: uppercase;
-    text-align: center;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover; }
+.content .content-inner {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .content .content-inner:after {
+    content: "";
+    display: table;
+    clear: both; }
+.content .section-heading {
+  height: 1.5em;
+  margin: 0.4em 0;
+  color: #fff;
+  font-size: 4em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; }
 
 #projects .project {
   float: left;
@@ -538,6 +540,31 @@ header nav {
     #about .team-member button:disabled, #about .team-member .modal .btn:disabled, .modal #about .team-member .btn:disabled {
       opacity: 0.5;
       cursor: not-allowed; }
+
+#team .section-heading {
+  background-image: url(../images/backgrounds/services.jpg); }
+#team .team-member {
+  float: left;
+  display: block;
+  margin-right: 16.03631%;
+  width: 41.98184%;
+  position: relative; }
+  #team .team-member:last-child {
+    margin-right: 0; }
+  #team .team-member:nth-child(2n) {
+    margin-right: 0; }
+  #team .team-member:nth-child(2n+1) {
+    clear: left; }
+  #team .team-member .team-member-pic {
+    float: left;
+    margin-right: 1.5em;
+    padding: 0.4em;
+    border: 2px solid #4e3449; }
+  #team .team-member .team-member-name {
+    margin: 0 0; }
+  #team .team-member .team-member-title {
+    font-size: 0.9em;
+    opacity: 0.5; }
 
 .footer .signup-form {
   max-width: 68em;
@@ -842,7 +869,8 @@ header nav {
 .footer {
   background: #9a345a;
   padding: 2em 1.618em;
-  width: 100%; }
+  width: 100%;
+  margin-top: 1em; }
   .footer .footer-logo {
     text-align: center;
     margin-bottom: 2em; }
