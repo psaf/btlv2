@@ -429,12 +429,16 @@ header nav {
 #services .service {
   float: left;
   display: block;
-  margin-right: 7.42297%;
-  width: 19.43277%;
+  margin-right: 16.03631%;
+  width: 41.98184%;
   margin-bottom: 8px;
-  border-bottom: 8px solid #4e3449; }
+  overflow: hidden; }
   #services .service:last-child {
     margin-right: 0; }
+  #services .service:nth-child(2n) {
+    margin-right: 0; }
+  #services .service:nth-child(2n+1) {
+    clear: left; }
   #services .service [class^="icon-"], #services .service [class*=" icon-"] {
     font-size: 6em;
     color: #ea4a86; }
@@ -456,10 +460,22 @@ header nav {
 
 #about .section-heading {
   background-image: url(../images/backgrounds/about.jpg); }
+#about .aboutus-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  margin-right: 0; }
+  #about .aboutus-content:last-child {
+    margin-right: 0; }
+  #about .aboutus-content:after {
+    content: "";
+    display: table;
+    clear: both; }
 #about .section-inner-heading {
   padding-bottom: 0.5em;
-  text-align: center;
-  border-bottom: 1px solid #555555; }
+  text-align: center; }
 #about .philosophies {
   margin-bottom: 5em; }
   #about .philosophies:after {
