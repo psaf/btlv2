@@ -3,6 +3,7 @@
 		<title>Behind The Line</title>
 
 		<link rel="stylesheet" href="style/fonts.css">
+		<link rel="stylesheet" href="style/sss.css">
 		<link rel="stylesheet" href="style/main.css">
 		
 
@@ -24,44 +25,14 @@
 			</nav>
 
 			<div class="hero">
-				<div class="hero-inner">
-			    <a href="" class="hero-logo">
-			    	<img  src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
-			    </a>
-					<div class="hero-copy">
-						<h1>Behind The Line</h1>
-						<p><b>A SOCIAL ENTERPRISE</b> dedicated to the development and support of social and cultural enhancement through creativity and innovation.</p>	
-					</div>
-			    <div class="modal">
-					  <label for="modal-1">
-					    <div class="btn js-btn">What's a Social Enterprise?</div>
-					  </label>
-					  <input class="modal-state" id="modal-1" type="checkbox" />
-					  <div class="modal-window">
-					    <div class="modal-inner">
-					      <label class="modal-close" for="modal-1"></label>
-					      <h1>What's a Social Enterprise?</h1>
-					      <p class="intro">A social enterprise is an organization that applies commercial strategies to maximize improvements in human and environmental well-being, rather than maximizing profits for external shareholders.</p>
-
-					      <p class="body">Many commercial enterprises would consider themselves to have social objectives, but commitment to these objectives is motivated by the perception that such commitment will ultimately make the enterprise more financially valuable. Social enterprises differ in that, inversely, they do not aim to offer any benefit to their investors, except where they believe that doing so will ultimately further their capacity to realize their social and environmental goals.</p>
-
-					      <p class="body">Canadian social enterprise characteristics vary by region and province in the ways they differentiate social enterprises from other types of businesses, not-for-profits, co-operatives and government agencies:</p>
-
-					      <p class="body point">
-					      	Social enterprises may directly address social needs through their products and services, the number of people they employ or the use of their financial surplus. This can distinguish them from "socially responsible for-profit businesses", which create positive social change indirectly through the practice of corporate social responsibility (e.g., creating and implementing a charitable foundation; paying fair wages to their employees; using environmentally friendly raw materials; providing volunteers to help with community projects).
-					      </p>
-
-					      <p class="body point">
-					      	Social enterprises may use earned revenue strategies to pursue a double or triple bottom line, either alone (as a social economy business, in either the private or the not-for-profit sector) or as a significant part of a not-for-profit corporation's mixed income stream that may include charitable contributions and public sector assistance. This distinguishes them from some traditional not-for-profit corporations, which may rely in whole or part on charitable and government support.
-					      </p>
-
-					      <p class="body">
-					      	Significant regional differences in legislation, financing, support agencies and corporate structures can be seen across Canada as a result of different historical development paths in the social economy. Common regional characteristics can be seen in British Columbia, the Prairies, Ontario, Quebec and Atlantic Canada.
-					      </p>
-					    </div>
-					  </div>
-					</div>
-				</div>
+	    		<div>
+	    			<img  alt="" src="images/sample.jpg">
+					<span class="caption">This is a caption</span>	
+	    		</div>
+	    		<div><img  alt="" src="http://lorempixel.com/1600/450"></div>
+	    		<div><img  alt="" src="http://lorempixel.com/1600/450"></div>
+	    		<div><img  alt="" src="http://lorempixel.com/1600/450"></div>
+	    		<div><img  alt="" src="http://lorempixel.com/1600/450"></div>
 			</div>
 		</header>
 
@@ -201,5 +172,13 @@
 			</div>		
 		</footer>
 		<p class="copyright">Copyright &copy; Behind The Line 2014</p>
+		<script src="//code.jquery.com/jquery-latest.min.js"></script>
+		<script src="scripts/sss.min.js"></script>
+
+		<script>
+			$(function() {
+				$('.hero').sss();
+			});
+		</script>
 	</body>
 </html>
