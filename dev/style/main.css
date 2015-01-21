@@ -823,6 +823,8 @@ header nav {
           margin-left: 0.5em;
           padding-right: 0.6em;
           border-right: 1px solid #fff; }
+          .footer .footer-content .footer-nav ul li a {
+            line-height: 2.5em; }
           .footer .footer-content .footer-nav ul li:first-child {
             margin-left: 0; }
           .footer .footer-content .footer-nav ul li:last-child {
