@@ -334,7 +334,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'ff-tisa-web-pro', 'Times New Roman', serif; }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   color: #555555; }
 
 h3 {
@@ -401,7 +401,7 @@ header nav {
   height: 1.5em;
   margin: 0.4em 0;
   color: #fff;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 1.5em;
   text-transform: uppercase;
   text-align: center;
@@ -441,7 +441,7 @@ header nav {
     position: absolute;
     top: 0.8em;
     right: 0.2em;
-    font-size: 3em;
+    font-size: 2.8em;
     color: #ea4a86; }
   #services .service .icon {
     margin: 0 auto;
