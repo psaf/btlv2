@@ -179,7 +179,17 @@
 			$(function() {
 				$('.hero').sss();
 
-				var stickyNavTop = $()
+				var navbar = $('header-nav');
+				var stickyNavTop = navbar.offset().top;
+
+				var stickyNav = function () {
+					var scrollTop = $(window).scrollTop();
+
+					if(scrollTop > stickyNavTop) 
+						navbar.addClass('sticky-header');
+					else
+						navbar.removeClass('sticky-header');
+				};
 			});
 		</script>
 	</body>
