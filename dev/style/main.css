@@ -364,31 +364,47 @@ header .brand-icon {
     width: 0;
     height: 100%; }
 header nav {
+  position: relative;
   background-color: #4e3449; }
-  header nav ul {
+  header nav .social-media {
+    position: absolute;
+    top: -0.75em;
+    right: 1em;
+    list-style: none; }
+    header nav .social-media li {
+      float: left;
+      margin-left: 1em; }
+      header nav .social-media li a {
+        color: #fff; }
+        header nav .social-media li a:hover {
+          color: #9a6790; }
+      header nav .social-media li span {
+        font-size: 2em;
+        line-height: 1.5em; }
+  header nav .nav-list {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
     list-style: none;
     text-align: center;
     margin-bottom: 0; }
-    header nav ul:after {
+    header nav .nav-list:after {
       content: "";
       display: table;
       clear: both; }
-    header nav ul li {
+    header nav .nav-list li {
       float: left;
       display: block;
       margin-right: 10.1484%;
       width: 26.56773%; }
-      header nav ul li:last-child {
+      header nav .nav-list li:last-child {
         margin-right: 0; }
-      header nav ul li a {
+      header nav .nav-list li a {
         display: block;
         padding: 1em 0;
         text-decoration: none;
         color: #fff; }
-        header nav ul li a:hover {
+        header nav .nav-list li a:hover {
           background-color: #9a6790; }
 header .sticky-header {
   position: fixed;
@@ -397,7 +413,7 @@ header .sticky-header {
   right: 0;
   margin-bottom: 3em;
   z-index: 100; }
-  header .sticky-header ul {
+  header .sticky-header .nav-list {
     margin-top: 0; }
 
 .content .content-inner {

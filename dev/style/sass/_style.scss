@@ -48,9 +48,36 @@ header {
 	}
 
 	nav {
+		position: relative;
 		background-color: $purple;
+		
+		.social-media {
+			position: absolute;
+			top: -.75em;
+			right: 1em;
 
-		ul {
+			list-style: none;
+
+			li {
+				float: left;
+				margin-left: 1em;
+
+				a {
+					color: #fff;
+
+					&:hover {
+						color: lighten($purple, 25);
+					}
+				}
+
+				span {
+					font-size: 2em;
+					line-height: 1.5em;
+				}
+			}
+		}
+
+		.nav-list {
 			@include outer-container();
 			
 			list-style: none;
@@ -85,7 +112,7 @@ header {
 		margin-bottom: 3em;
 		z-index: 100;
 
-		ul {
+		.nav-list {
 			margin-top: 0;
 		}
 	}
