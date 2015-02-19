@@ -343,19 +343,21 @@ h3 {
 p {
   color: #222; }
 
-header .brand-icon {
+header .brand {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  background-image: url(../images/btl-header.png);
-  margin: 0 auto;
-  width: 709px;
-  height: 250px; }
-  header .brand-icon:after {
+  margin-right: auto; }
+  header .brand:after {
     content: "";
     display: table;
     clear: both; }
+header .brand-icon {
+  overflow: hidden;
+  background-image: url(../images/btl-header.png);
+  background-size: contain;
+  margin: 0 auto;
+  width: 355px;
+  height: 125px; }
   header .brand-icon:before {
     content: "";
     display: block;

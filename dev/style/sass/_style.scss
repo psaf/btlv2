@@ -31,17 +31,20 @@ p {
 }
 
 header {
-
-	.brand-icon {
+	.brand {
 		@include outer-container();
+	}
+	.brand-icon {
 		@include hide-text;
 
 		background-image: url(../images/btl-header.png);
-
+		background-size: contain;
 		margin: 0 auto;
 
-		width: 709px;
-		height: 250px;
+		width: 355px;
+		height: 125px;
+
+		// height: 30%;
 	}
 
 	nav {
