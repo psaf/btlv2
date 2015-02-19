@@ -190,6 +190,10 @@
 					else
 						navbar.removeClass('sticky-header');
 				};
+
+				$(window).scroll(function() {
+					stickyNav();
+				});
 			});
 		</script>
 	</body>
