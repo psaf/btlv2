@@ -72,6 +72,20 @@ header {
 			}
 		}
 	}
+
+	.sticky-header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+
+		margin-bottom: 3em;
+		z-index: 100;
+
+		ul {
+			margin-top: 0;
+		}
+	}
 }
 
 .content {

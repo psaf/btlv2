@@ -388,6 +388,15 @@ header nav {
         color: #fff; }
         header nav ul li a:hover {
           background-color: #9a6790; }
+header .sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 3em;
+  z-index: 100; }
+  header .sticky-header ul {
+    margin-top: 0; }
 
 .content .content-inner {
   max-width: 68em;
