@@ -343,6 +343,9 @@ h3 {
 p {
   color: #222; }
 
+.center {
+  text-align: center; }
+
 header .brand {
   max-width: 68em;
   margin-left: auto;

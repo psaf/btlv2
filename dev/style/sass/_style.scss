@@ -30,6 +30,10 @@ p {
 	color: #222;
 }
 
+.center {
+	text-align: center;
+}
+
 header {
 	.brand {
 		@include outer-container();
