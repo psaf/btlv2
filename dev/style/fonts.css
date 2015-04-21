@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?gsewpe');
-	src:url('fonts/icomoon.eot?#iefixgsewpe') format('embedded-opentype'),
-		url('fonts/icomoon.woff?gsewpe') format('woff'),
-		url('fonts/icomoon.ttf?gsewpe') format('truetype'),
-		url('fonts/icomoon.svg?gsewpe#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?y8bl2t');
+	src:url('fonts/icomoon.eot?#iefixy8bl2t') format('embedded-opentype'),
+		url('fonts/icomoon.woff?y8bl2t') format('woff'),
+		url('fonts/icomoon.ttf?y8bl2t') format('truetype'),
+		url('fonts/icomoon.svg?y8bl2t#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -26,12 +26,36 @@
 .icon-palette:before {
 	content: "\e600";
 }
+
 .icon-network:before {
 	content: "\e601";
 }
+
 .icon-screen:before {
 	content: "\e602";
 }
+
 .icon-book:before {
 	content: "\e603";
 }
+
+.icon-arrow-left:before {
+	content: "\e607";
+}
+
+.icon-arrow-right:before {
+	content: "\e608";
+}
+
+.icon-twitter:before {
+	content: "\e604";
+}
+
+.icon-facebook:before {
+	content: "\e605";
+}
+
+.icon-linkedin:before {
+	content: "\e606";
+}
+

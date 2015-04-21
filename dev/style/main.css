@@ -859,3 +859,17 @@ header nav {
 .copyright {
   text-align: center;
   font-size: 0.8em; }
+
+.caption-container {
+  padding: 0.5em;
+  background: rgba(0, 0, 0, 0.4); }
+  .caption-container p {
+    text-align: center;
+    color: #eee;
+    margin: 0; }
+
+.next, .prev {
+  font-size: 1em;
+  color: #fff; }
+  .next span, .prev span {
+    font-size: 4em; }

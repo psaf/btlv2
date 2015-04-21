@@ -1,0 +1,22 @@
+.caption-container {
+	padding: .5em;
+
+	background: rgba(0, 0, 0, .4);	
+	
+	p {
+		text-align: center;
+		color: #eee;
+		margin: 0;
+	}
+}
+
+.next, .prev {
+	font-size: 1em;
+	// padding: 0 1em;
+
+	color: #fff;
+
+	span {
+		font-size: 4em;
+	}
+}
