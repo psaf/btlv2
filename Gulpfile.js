@@ -20,6 +20,14 @@ gulp.task('sass', function() {
          .pipe(livereload());
 });
 
+gulp.task('sass-saaacartfundraiser', function() {
+   return gulp.src('dev/saaacartfundraiser/style/sass/main.scss')
+         .pipe(sass())
+         .pipe(autoprefixer('last 10 version'))
+         .pipe(gulp.dest('dev/saaacartfundraiser/style/'))
+         .pipe(livereload());
+});
+
 gulp.task('css', function() {
    return gulp.src('dev/**/*.css')
          .pipe(livereload());
@@ -32,7 +40,7 @@ gulp.task('server', function() {
 gulp.task('watch', function() {
    livereload.listen();
    gulp.watch('dev/style/sass/**/*.scss', ['sass']);
-   gulp.watch('dev/saacartfundraiser/**/*.css', ['css']);
+   gulp.watch('dev/saaacartfundraiser/**/*.scss', ['sass-saaacartfundraiser']);
    gulp.watch('dev/**/*.html', ['html']);
 });
 

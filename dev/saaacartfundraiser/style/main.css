@@ -1,0 +1,113 @@
+body {
+  overflow-x: hidden; }
+
+h1 {
+  font-family: "brandon-grotesque", serif; }
+
+p, ul:not(.nav), address {
+  font-family: "merriweather", serif;
+  font-size: 1.1em;
+  line-height: 1.5em; }
+
+.header {
+  background-image: url(../images/kids.jpg);
+  height: 400px; }
+
+.header h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 4em;
+  line-height: 300px;
+  margin: 0;
+  text-shadow: 1px 1px 3px #000; }
+
+.parallax {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+figure img {
+  width: 100%; }
+
+.first-section {
+  padding: 3em 0 10em 0;
+  background: #0869a5;
+  color: #b3e1ff; }
+
+section:not(.first-section) {
+  position: relative;
+  padding: 6em 0em;
+  background: #fff; }
+
+section::before, section::after {
+  position: absolute;
+  content: '';
+  pointer-events: none; }
+
+.diag-separator-forward, .diag-separator-backward {
+  z-index: 1;
+  padding-top: 6em; }
+
+.diag-separator-forward::before, .diag-separator-forward::after {
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  -webkit-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+      transform-origin: 0 0; }
+
+.diag-separator-forward::before {
+  height: 50%;
+  background: #2072a7;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+  -webkit-transform-origin: 3% 0;
+  -ms-transform-origin: 3% 0;
+      transform-origin: 3% 0; }
+
+.diag-separator-backward::before, .diag-separator-backward::after {
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  -webkit-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+      transform: rotate(2deg);
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+      transform-origin: 100% 0; }
+
+.diag-separator-backward::before {
+  height: 50%;
+  background: #2072a7;
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+      transform: rotate(3deg);
+  -webkit-transform-origin: 97% 0;
+  -ms-transform-origin: 97% 0;
+      transform-origin: 97% 0; }
+
+.how-it-works-list li {
+  padding: 1em;
+  list-style-type: none; }
+
+.thumbnail img {
+  width: 100%; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2072a7;
+  padding: 1em 0; }
