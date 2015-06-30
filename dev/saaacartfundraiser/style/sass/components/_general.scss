@@ -1,0 +1,52 @@
+/*
+    Components
+ */
+.parallax {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.vertical-align {
+        position: relative;
+        top: 40%;
+        transform: translateY(-40%);
+}
+
+.row {
+    height: 80%;
+}
+
+/*
+    Base
+ */
+body {
+    overflow-x: hidden;
+}
+
+/*
+    Header
+ */
+.header {
+    background-image: url(../images/kids.jpg);
+    height: 400px;
+}
+
+
+figure img {
+    width: 100%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2072a7;
+    padding: 1em 0;
+}

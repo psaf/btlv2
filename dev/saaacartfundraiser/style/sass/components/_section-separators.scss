@@ -1,0 +1,86 @@
+/*
+    Setting up base components
+ */
+section:not(.first-section) {
+    position: relative;
+    // padding: 6em 0em;
+    background: #fff;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        pointer-events: none;
+    }
+}
+
+.first-section {
+    // padding: 3em 0 10em 0;
+    background: #0869a5;
+    color: #b3e1ff;
+}
+
+/*
+    Setting up separators
+ */
+.diag-separator-forward,
+.diag-separator-backward {
+    z-index: 1; 
+    // padding-top: 6em;
+}
+
+/*
+    Forward separator
+ */
+.diag-separator-forward {
+    &::before,
+    &::after {
+        top: 0;
+        left: -25%;
+        z-index: -1;
+        width: 150%;
+        height: 75%;
+        background: inherit;
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+
+    &::before {
+        height: 50%;
+        background: #2072a7;
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+        -webkit-transform-origin: 3% 0;
+        transform-origin: 3% 0;
+    }
+}
+
+/*
+    Backwards separator
+ */
+.diag-separator-backward {
+    &::before,
+    &::after {
+        top: 0;
+        left: -25%;
+        z-index: -1;
+        width: 150%;
+        height: 75%;
+        background: inherit;
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+    }
+
+    &::before {
+        height: 50%;
+        background: #2072a7;
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+        -webkit-transform-origin: 97% 0;
+        transform-origin: 97% 0;
+    }
+}

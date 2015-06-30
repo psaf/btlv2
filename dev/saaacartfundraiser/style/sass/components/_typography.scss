@@ -1,0 +1,43 @@
+h1 {
+    font-family: "brandon-grotesque", serif;
+}
+
+p, ul:not(.nav), address { 
+    font-family: "merriweather", serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.header h1 {
+    color: #fff;
+    margin: 0;
+
+    font-weight: bold;
+    font-size: 4em;
+    line-height: 300px;
+
+    text-shadow: 1px 1px 3px #000;
+}
+
+.how-it-works-list {
+    height: 80%;
+    ul {
+        position: relative;
+        top: 40%;
+        transform: translateY(-40%);
+    }
+    li {
+        list-style-type: none;
+        padding: 1em 0;
+    }
+}
+
+.heading {
+    height: 80%;
+    h1 {
+        position: relative;
+        top: 40%;
+        transform: translateY(-40%);
+        font-size: 8em;
+    }
+}
