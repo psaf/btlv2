@@ -112,8 +112,7 @@
     <section id="the-art" class="diag-separator-backward">
         <div class="container">
             <h1 class="top-heading">The Art</h1>
-            <div class="row grid js-masonry"
-                 data-masonry-options='{ "itemSelector": ".grid-item", "columWidth": ".grid-item" }'>
+            <div class="row grid">
                 <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Darwin.jpg" alt=""></a></div>
                 <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Fields.jpg" alt=""></a></div>
                 <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Gandhi.jpg" alt=""></a></div>
@@ -162,5 +161,15 @@
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
+    <script src="scripts/imagesloaded.pkgd.min.js" charset="utf-8"></script>
+    <script>
+    var grid = document.querySelector('.grid');
+    imagesLoaded(grid, function(e) {
+      var msnry = new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-item'
+      });
+    })
+    </script>
     </body>
 </html>
