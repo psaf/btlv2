@@ -112,19 +112,19 @@
     <section id="the-art" class="diag-separator-backward">
         <div class="container">
             <h1 class="top-heading">The Art</h1>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Darwin.jpg" alt=""></a></div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Fields.jpg" alt=""></a></div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Gandhi.jpg" alt=""></a></div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Grid.jpg" alt=""></a></div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Hope.jpg" alt=""></a></div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Inside.jpg" alt=""></a></div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Martin-Luther-King.jpg" alt=""></a></div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Pattern-Five.jpg" alt=""></a></div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Persistence.jpg" alt=""></a></div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Solstice.jpg" alt=""></a></div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Split-Universe-2.jpg" alt=""></a></div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Understood.jpg" alt=""></a></div>
+            <div class="row grid">
+                <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Darwin.jpg" alt=""></a></div>
+                <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Fields.jpg" alt=""></a></div>
+                <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Gandhi.jpg" alt=""></a></div>
+                <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Grid.jpg" alt=""></a></div>
+                <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Hope.jpg" alt=""></a></div>
+                <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Inside.jpg" alt=""></a></div>
+                <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Martin-Luther-King.jpg" alt=""></a></div>
+                <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Understood.jpg" alt=""></a></div>
+                <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Pattern-Five.jpg" alt=""></a></div>
+                <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Persistence.jpg" alt=""></a></div>
+                <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Solstice.jpg" alt=""></a></div>
+                <div class="grid-item col-xs-12 col-sm-6 col-md-4 col-lg-3"><a href="#" class="thumbnail"><img src="images/arts/Split-Universe-2.jpg" alt=""></a></div>
             </div>
         </div>
     </section>
@@ -159,5 +159,14 @@
             </div>
         </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
+    <script>
+      var grid = document.querySelector('.grid');
+      var msnry = new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-item'
+      });
+    </script>
     </body>
 </html>
