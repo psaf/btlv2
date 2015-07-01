@@ -8,16 +8,6 @@
   background-repeat: no-repeat;
 }
 
-.vertical-align {
-  position: relative;
-  top: 40%;
-  transform: translateY(-40%);
-}
-
-.row {
-  height: 80%;
-}
-
 /*
     Base
  */
@@ -31,6 +21,19 @@ body {
 .header {
   background-image: url(../images/kids.jpg);
   height: 400px;
+}
+
+.side-heading {
+  font-size: 7em;
+  text-align: center;
+  margin: 0;
+}
+
+.top-heading {
+  font-size: 7em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: .5em;
 }
 
 

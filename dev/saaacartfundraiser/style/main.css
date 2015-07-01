@@ -7,16 +7,6 @@
   background-position: center center;
   background-repeat: no-repeat; }
 
-.vertical-align {
-  position: relative;
-  top: 40%;
-  -webkit-transform: translateY(-40%);
-      -ms-transform: translateY(-40%);
-          transform: translateY(-40%); }
-
-.row {
-  height: 80%; }
-
 /*
     Base
  */
@@ -29,6 +19,17 @@ body {
 .header {
   background-image: url(../images/kids.jpg);
   height: 400px; }
+
+.side-heading {
+  font-size: 7em;
+  text-align: center;
+  margin: 0; }
+
+.top-heading {
+  font-size: 7em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: .5em; }
 
 figure img {
   width: 100%; }
@@ -75,17 +76,14 @@ p, ul:not(.nav), address {
  */
 section {
   position: relative;
-  padding-top: 1em;
-  padding-bottom: 7em;
   background: #fff; }
   section::before, section::after {
     position: absolute;
     content: '';
     pointer-events: none; }
-
-#how-it-works {
-  background: #0869a5;
-  color: #b3e1ff; }
+  section .container {
+    padding-top: 2em;
+    padding-bottom: 7em; }
 
 /*
     Setting up separators
@@ -163,10 +161,6 @@ section {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.how-it-works-heading {
-  font-size: 7em;
-  text-align: center; }
-
 .how-it-works-list {
   list-style-type: none;
   margin: 0;
@@ -194,3 +188,15 @@ section {
       counter-increment: li-counter; }
     .how-it-works-list li h2 {
       padding-bottom: .5em; }
+
+#who-we-are {
+  background: #fff; }
+
+.sub-heading {
+  margin-bottom: 3em;
+  text-align: center; }
+
+.organization img {
+  margin-bottom: 2em; }
+.organization p {
+  font-size: 1.3em; }
