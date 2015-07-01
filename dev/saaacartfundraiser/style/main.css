@@ -147,7 +147,7 @@ section {
   background: #0869a5;
   color: #fff; }
 
-.how-it-works-flexbox {
+.v-center {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -160,6 +160,10 @@ section {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+@media (max-width: 990px) {
+  .v-center {
+    display: block; } }
 
 .how-it-works-list {
   list-style-type: none;
@@ -200,3 +204,10 @@ section {
   margin-bottom: 2em; }
 .organization p {
   font-size: 1.3em; }
+
+#the-art {
+  background: #008e46; }
+  #the-art::before {
+    background-color: #00b559; }
+  #the-art .top-heading {
+    color: #fff; }

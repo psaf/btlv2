@@ -3,10 +3,16 @@
     color: #fff;
 }
 
-.how-it-works-flexbox {
+.v-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 990px) {
+  .v-center {
+    display: block;
+  }
 }
 
 .how-it-works-list {

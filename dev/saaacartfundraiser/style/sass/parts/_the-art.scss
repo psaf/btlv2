@@ -1,0 +1,11 @@
+#the-art {
+  background: #008e46;
+
+  &::before {
+    background-color: #00b559;
+  }
+
+  .top-heading {
+    color: #fff;
+  }
+}
