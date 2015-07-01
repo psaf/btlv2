@@ -1,11 +1,11 @@
-h1 {
-    font-family: "brandon-grotesque", serif;
+h1, h2, h3, h4 {
+    font-family: "ff-tisa-web-pro", serif;
 }
 
-p, ul:not(.nav), address { 
-    font-family: "merriweather", serif;
+p, ul:not(.nav), address {
+    font-family: "proxima-nova", sans-serif;
     font-size: 1.1em;
-    line-height: 1.5em;
+    line-height: 1.618em;
 }
 
 .header h1 {
@@ -13,31 +13,14 @@ p, ul:not(.nav), address {
     margin: 0;
 
     font-weight: bold;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 300px;
 
     text-shadow: 1px 1px 3px #000;
 }
 
-.how-it-works-list {
-    height: 80%;
-    ul {
-        position: relative;
-        top: 40%;
-        transform: translateY(-40%);
-    }
-    li {
-        list-style-type: none;
-        padding: 1em 0;
-    }
-}
-
-.heading {
-    height: 80%;
-    h1 {
-        position: relative;
-        top: 40%;
-        transform: translateY(-40%);
-        font-size: 8em;
-    }
+.section-heading {
+  text-align: center;
+  font-size: 4em;
+  border-bottom: 2px dashed #fff;
 }
