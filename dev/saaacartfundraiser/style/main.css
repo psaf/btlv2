@@ -145,6 +145,10 @@ section {
   -ms-transform-origin: 97% 0;
       transform-origin: 97% 0; }
 
+#how-it-works {
+  background: #0869a5;
+  color: #fff; }
+
 .how-it-works-flexbox {
   display: -webkit-box;
   display: -webkit-flex;
@@ -172,7 +176,7 @@ section {
   .how-it-works-list li {
     position: relative;
     padding-left: .5em;
-    margin-left: 1em;
+    margin-left: 3em;
     min-height: 6em; }
     .how-it-works-list li:before {
       position: absolute;
@@ -184,7 +188,8 @@ section {
       font-weight: bold;
       font-style: italic;
       text-align: right;
-      color: #00b251;
+      color: #66b1ce;
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
       content: counter(li-counter);
       counter-increment: li-counter; }
     .how-it-works-list li h2 {

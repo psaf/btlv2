@@ -1,22 +1,7 @@
-// .how-it-works-list {
-//   height: auto;
-//
-//   .how-it-works-item {
-//     list-style-type: none;
-//     margin-bottom: 2em;
-//
-//     .how-it-works-item-wrapper {
-//       height: 14em;
-//       padding: .5em;
-//       // background: #333;
-//       border-radius: 8%;
-//
-//       .how-it-works-heading {
-//         margin-top: 0;
-//       }
-//     }
-//   }
-// }
+#how-it-works {
+    background: #0869a5;
+    color: #fff;
+}
 
 .how-it-works-flexbox {
   display: flex;
@@ -41,9 +26,8 @@
   li {
     position: relative;
     padding-left: .5em;
-    margin-left: 1em;
+    margin-left: 3em;
     min-height: 6em;
-    // border-left: 2px solid #ccc;
 
     &:before {
       position: absolute;
@@ -56,7 +40,8 @@
       font-weight: bold;
       font-style: italic;
       text-align: right;
-      color: #00b251;
+      color: #66b1ce;
+      text-shadow: 1px 1px rgba(0,0,0,.3);
 
       content: counter(li-counter);
       counter-increment: li-counter;
@@ -64,6 +49,7 @@
 
     h2 {
       padding-bottom: .5em;
+      // color:
     }
   }
 }
