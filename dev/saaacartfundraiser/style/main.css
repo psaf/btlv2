@@ -69,7 +69,27 @@ p, ul:not(.nav), address {
 .navbar {
   background: #fff;
   border: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  border-bottom: 1px solid #0869a5; }
+
+.navbar-brand {
+  font-family: "ff-tisa-web-pro", serif;
+  font-size: 2em;
+  color: #fff !important;
+  width: 500px;
+  height: 50px;
+  background-image: url(../images/saaac-btl.png);
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.navbar-item:not(:last-child) {
+  margin-right: 1em; }
+.navbar-item a {
+  color: #0869a5 !important; }
+  .navbar-item a:hover {
+    margin-top: -3px;
+    border-bottom: 3px solid #0869a5; }
 
 /*
     Setting up base components
