@@ -1,0 +1,37 @@
+#contact {
+  background: $color-dark-orange;
+  color: #fff;
+
+  &:before {
+    background: $color-light-orange;
+  }
+}
+
+#map {
+  margin-bottom: 1em;
+}
+
+.contact-form {
+
+  input, textarea {
+    background-color: $color-dark-orange;
+    color: #fff;
+
+    &::-webkit-input-placeholder {
+      color: #fff;
+    }
+
+    &:focus, &:hover, &:active {
+      outline: 0px !important;
+      -webkit-appearance: none;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      border-color: #fff;
+      background: $color-light-orange;
+    }
+  }
+
+  input[type=submit] {
+    background: $color-light-orange;
+  }
+}

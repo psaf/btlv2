@@ -211,3 +211,27 @@ section {
     background-color: #00b559; }
   #the-art .top-heading {
     color: #fff; }
+
+#contact {
+  background: #7e1b00;
+  color: #fff; }
+  #contact:before {
+    background: #a62800; }
+
+#map {
+  margin-bottom: 1em; }
+
+.contact-form input, .contact-form textarea {
+  background-color: #7e1b00;
+  color: #fff; }
+  .contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
+    color: #fff; }
+  .contact-form input:focus, .contact-form input:hover, .contact-form input:active, .contact-form textarea:focus, .contact-form textarea:hover, .contact-form textarea:active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-color: #fff;
+    background: #a62800; }
+.contact-form input[type=submit] {
+  background: #a62800; }
