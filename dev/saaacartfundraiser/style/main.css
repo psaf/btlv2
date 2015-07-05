@@ -7,10 +7,25 @@
   background-position: center center;
   background-repeat: no-repeat; }
 
+.flexbox-v-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 75%; }
+
 /*
     Base
  */
-body {
+.wrapper {
   overflow-x: hidden; }
 
 /*
@@ -18,12 +33,16 @@ body {
  */
 .header {
   background-image: url(../images/kids.jpg);
-  height: 400px; }
+  height: 500px; }
 
 .side-heading {
   font-size: 7em;
   text-align: center;
   margin: 0; }
+
+@media (max-width: 990px) {
+  .side-heading {
+    margin-bottom: .5em; } }
 
 .top-heading {
   font-size: 7em;
@@ -34,7 +53,7 @@ body {
 figure img {
   width: 100%; }
 
-.thumbnail img {
+.thumbnail im0g {
   width: 100%; }
 
 .footer {
@@ -58,7 +77,6 @@ p, ul:not(.nav), address {
   margin: 0;
   font-weight: bold;
   font-size: 3em;
-  line-height: 300px;
   text-shadow: 1px 1px 3px #000; }
 
 .section-heading {

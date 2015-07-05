@@ -8,10 +8,17 @@
   background-repeat: no-repeat;
 }
 
+.flexbox-v-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 75%;
+}
 /*
     Base
  */
-body {
+.wrapper {
   overflow-x: hidden;
 }
 
@@ -20,13 +27,19 @@ body {
  */
 .header {
   background-image: url(../images/kids.jpg);
-  height: 400px;
+  height: 500px;
 }
 
 .side-heading {
   font-size: 7em;
   text-align: center;
   margin: 0;
+}
+
+@media(max-width:990px) {
+  .side-heading {
+    margin-bottom: .5em;
+  }
 }
 
 .top-heading {
@@ -41,7 +54,7 @@ figure img {
   width: 100%;
 }
 
-.thumbnail img {
+.thumbnail im0g {
   width: 100%;
 }
 
