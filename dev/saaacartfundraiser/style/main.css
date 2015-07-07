@@ -183,7 +183,26 @@ section {
   -ms-transform-origin: 97% 0;
       transform-origin: 97% 0; }
 
-#how-it-works {
+#who-we-are {
+  background: #fff; }
+
+.sub-heading {
+  margin-bottom: 3em;
+  text-align: center; }
+
+.organization img {
+  margin-bottom: 2em; }
+.organization p {
+  font-size: 1.3em; }
+
+#the-art {
+  background: #008e46; }
+  #the-art::before {
+    background-color: #00b559; }
+  #the-art .top-heading {
+    color: #fff; }
+
+#faq {
   background: #0869a5;
   color: #fff; }
 
@@ -232,25 +251,6 @@ section {
       counter-increment: li-counter; }
     .how-it-works-list li h2 {
       padding-bottom: .5em; }
-
-#who-we-are {
-  background: #fff; }
-
-.sub-heading {
-  margin-bottom: 3em;
-  text-align: center; }
-
-.organization img {
-  margin-bottom: 2em; }
-.organization p {
-  font-size: 1.3em; }
-
-#the-art {
-  background: #008e46; }
-  #the-art::before {
-    background-color: #00b559; }
-  #the-art .top-heading {
-    color: #fff; }
 
 #contact {
   background: #7e1b00;
