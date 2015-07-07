@@ -32,8 +32,10 @@
     Header
  */
 .header {
-  background-image: url(../images/kids.jpg);
-  height: 500px; }
+  background-image: url(../images/header-bg.jpg);
+  background-position: top center;
+  background-size: contain;
+  height: 400px; }
 
 .side-heading {
   font-size: 7em;
