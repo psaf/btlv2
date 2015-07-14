@@ -1,3 +1,4 @@
+@import url(components/lightbox.css);
 /*
     Components
  */
@@ -263,6 +264,50 @@ section {
     background-color: #ff5f2d; }
   #the-art .top-heading {
     color: #fff; }
+  #the-art .thumbnail {
+    position: relative;
+    border: 0;
+    padding: 0;
+    background: none; }
+    #the-art .thumbnail img {
+      border-radius: 10px; }
+    #the-art .thumbnail:hover .art-info {
+      visibility: visible;
+      opacity: 100;
+      -webkit-transition-delay: 0;
+              transition-delay: 0; }
+    #the-art .thumbnail .art-info {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1em;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 0 0 10px #ff5f2d;
+      -webkit-transition: all .2s linear;
+              transition: all .2s linear; }
+      #the-art .thumbnail .art-info h3 {
+        text-align: center; }
+      #the-art .thumbnail .art-info span {
+        display: block;
+        font-size: 1.3em; }
+      #the-art .thumbnail .art-info .year {
+        text-align: center; }
+      #the-art .thumbnail .art-info .size {
+        text-align: center; }
+      #the-art .thumbnail .art-info .price {
+        position: absolute;
+        bottom: 10px;
+        float: left; }
+      #the-art .thumbnail .art-info .medium {
+        position: absolute;
+        bottom: 10px;
+        right: 15px; }
 
 #faq {
   background: #0869a5;
