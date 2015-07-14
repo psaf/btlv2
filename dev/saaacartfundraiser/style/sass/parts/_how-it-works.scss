@@ -1,0 +1,36 @@
+.how-it-works-steps {
+  list-style: none;
+  padding: 0;
+  counter-reset: li-counter;
+
+  li {
+    position: relative;
+    height: 300px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    .step {
+      padding: 1em;
+      height: 100%;
+      border: 1px solid $color-dark-orange;
+      border-radius: 10px;
+    }
+
+    &:before {
+      position: absolute;
+      display: block;
+      padding: 0 2.5rem;
+
+      font-size: 4em;
+      top: -4rem;
+      left: calc(50% - 4.5rem);
+      background: #fff;
+
+      border-radius: 50%;
+      border: 1px solid $color-dark-orange;
+
+      content: counter(li-counter);
+      counter-increment: li-counter;
+    }
+  }
+}

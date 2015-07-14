@@ -1,6 +1,6 @@
 #the-artists {
   h2 {
-    margin-bottom: 1em;
+    // margin-bottom: .5em;
   }
 
   p {
@@ -8,12 +8,13 @@
   }
 }
 .artist {
-
   padding: 1em;
 
-  .artist-descriptor {
-    font-size: .8em;
-    padding-bottom: 1em;
+  .artist-desc {
+    display: block;
+    font-family: "proxima-nova", sans-serif;
+    font-size: .5em;
+    padding-top: .5em;
   }
 }
 

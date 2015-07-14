@@ -184,6 +184,33 @@ section {
   -ms-transform-origin: 97% 0;
       transform-origin: 97% 0; }
 
+.how-it-works-steps {
+  list-style: none;
+  padding: 0;
+  counter-reset: li-counter; }
+  .how-it-works-steps li {
+    position: relative;
+    height: 300px;
+    margin-top: 3em;
+    margin-bottom: 3em; }
+    .how-it-works-steps li .step {
+      padding: 1em;
+      height: 100%;
+      border: 1px solid #7e1b00;
+      border-radius: 10px; }
+    .how-it-works-steps li:before {
+      position: absolute;
+      display: block;
+      padding: 0 2.5rem;
+      font-size: 4em;
+      top: -4rem;
+      left: calc(50% - 4.5rem);
+      background: #fff;
+      border-radius: 50%;
+      border: 1px solid #7e1b00;
+      content: counter(li-counter);
+      counter-increment: li-counter; }
+
 #who-we-are {
   background: #fff; }
 
@@ -196,16 +223,16 @@ section {
 .organization p {
   font-size: 1.3em; }
 
-#the-artists h2 {
-  margin-bottom: 1em; }
 #the-artists p {
   font-size: 1.3em; }
 
 .artist {
   padding: 1em; }
-  .artist .artist-descriptor {
-    font-size: .8em;
-    padding-bottom: 1em; }
+  .artist .artist-desc {
+    display: block;
+    font-family: "proxima-nova", sans-serif;
+    font-size: .5em;
+    padding-top: .5em; }
 
 .artist-photo {
   border-radius: 5px;
