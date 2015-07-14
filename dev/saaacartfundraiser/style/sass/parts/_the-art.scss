@@ -15,6 +15,10 @@
     padding: 0;
     background: none;
 
+    border-radius: 10px;
+
+    box-shadow: 0 5px 2px -2px $color-dark-orange;
+
     img {
       border-radius: 10px;
     }
@@ -43,11 +47,12 @@
       color: #fff;
       border-radius: 10px;
       background: rgba(0, 0, 0, .8);
-      box-shadow: 0 0 0 10px $color-light-orange;
+      box-shadow: 0 0 0 3px $color-light-orange;
       transition: all .2s linear;
 
       h3 {
         text-align: center;
+        margin-top: 0;
       }
       span {
         display: block;
@@ -66,8 +71,13 @@
       }
       .medium {
         position: absolute;
-        bottom: 10px;
+        bottom: 12px;
         right: 15px;
+        font-size: 1.1em;
+      }
+
+      .wide-art {
+
       }
     }
   }

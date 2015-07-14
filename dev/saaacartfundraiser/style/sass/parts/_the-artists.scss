@@ -32,7 +32,9 @@
 
 .artist-photo {
   border-radius: 10px;
-  border: 2px solid $color-yellow;
+  // border: 2px solid $color-yellow;
+
+  box-shadow: 0 5px 2px -2px $color-dark-yellow;
 }
 
 .featured-artist {
