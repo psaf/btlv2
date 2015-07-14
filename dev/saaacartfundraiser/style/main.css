@@ -89,7 +89,7 @@ p, ul:not(.nav), address {
   background: #fff;
   border: 0;
   border-radius: 0;
-  border-bottom: 1px solid #0869a5; }
+  box-shadow: 0 0 0 3px #2072a7, 0 0 0 6px #ff5f2d, 0 0 0 9px #ffc72d; }
 
 .navbar-brand {
   font-family: "ff-tisa-web-pro", serif;
@@ -184,20 +184,28 @@ section {
   -ms-transform-origin: 97% 0;
       transform-origin: 97% 0; }
 
+#how-it-works {
+  background: #0869a5;
+  color: #fff;
+  box-shadow: 0 0 0 3px #ffc72d, 0 0 0 6px #ff5f2d, 0 0 0 9px #2072a7; }
+  #how-it-works:before {
+    background: #2072a7; }
+
 .how-it-works-steps {
   list-style: none;
   padding: 0;
   counter-reset: li-counter; }
   .how-it-works-steps li {
     position: relative;
-    height: 300px;
+    height: 14em;
     margin-top: 3em;
     margin-bottom: 3em; }
     .how-it-works-steps li .step {
       padding: 1em;
       height: 100%;
-      border: 1px solid #7e1b00;
-      border-radius: 10px; }
+      background: #2072a7;
+      border-radius: 10px;
+      box-shadow: 0px 4px 1px -2px #065381; }
     .how-it-works-steps li:before {
       position: absolute;
       display: block;
@@ -205,9 +213,8 @@ section {
       font-size: 4em;
       top: -4rem;
       left: calc(50% - 4.5rem);
-      background: #fff;
+      background: #0869a5;
       border-radius: 50%;
-      border: 1px solid #7e1b00;
       content: counter(li-counter);
       counter-increment: li-counter; }
 
@@ -223,8 +230,17 @@ section {
 .organization p {
   font-size: 1.3em; }
 
-#the-artists p {
-  font-size: 1.3em; }
+#the-artists {
+  background: #ffc72d; }
+  #the-artists p {
+    font-size: 1.3em; }
+  #the-artists .sub-heading {
+    margin: 0;
+    font-size: 4em; }
+  #the-artists .artist-name-sub-heading {
+    font-weight: bold; }
+  #the-artists:before {
+    background: #ffbb00; }
 
 .artist {
   padding: 1em; }
@@ -235,13 +251,16 @@ section {
     padding-top: .5em; }
 
 .artist-photo {
-  border-radius: 5px;
-  border: 2px solid #7e1b00; }
+  border-radius: 10px;
+  border: 2px solid #ffbb00; }
+
+.featured-artist {
+  margin-bottom: 3em; }
 
 #the-art {
-  background: #008e46; }
+  background: #ff3d00; }
   #the-art::before {
-    background-color: #00b559; }
+    background-color: #ff5f2d; }
   #the-art .top-heading {
     color: #fff; }
 
@@ -296,16 +315,16 @@ section {
       padding-bottom: .5em; }
 
 #contact {
-  background: #7e1b00;
+  background: #ffbb00;
   color: #fff; }
   #contact:before {
-    background: #a62800; }
+    background: #ffc72d; }
 
 #map {
   margin-bottom: 1em; }
 
 .contact-form input, .contact-form textarea {
-  background-color: #7e1b00;
+  background-color: #ca9400;
   color: #fff; }
   .contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
     color: #fff; }
@@ -315,6 +334,6 @@ section {
     box-shadow: none;
     -webkit-box-shadow: none;
     border-color: #fff;
-    background: #a62800; }
+    background: #ffc72d; }
 .contact-form input[type=submit] {
-  background: #a62800; }
+  background: #ffc72d; }

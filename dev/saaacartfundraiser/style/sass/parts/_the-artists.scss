@@ -1,12 +1,24 @@
 #the-artists {
-  h2 {
-    // margin-bottom: .5em;
-  }
+  background: $color-light-yellow;
 
   p {
     font-size: 1.3em;
   }
+
+  .sub-heading {
+    margin: 0;
+    font-size: 4em;
+  }
+
+  .artist-name-sub-heading {
+    font-weight: bold;
+  }
+
+  &:before {
+    background: $color-yellow;
+  }
 }
+
 .artist {
   padding: 1em;
 
@@ -19,6 +31,10 @@
 }
 
 .artist-photo {
-  border-radius: 5px;
-  border: 2px solid $color-dark-orange;
+  border-radius: 10px;
+  border: 2px solid $color-yellow;
+}
+
+.featured-artist {
+  margin-bottom: 3em;
 }

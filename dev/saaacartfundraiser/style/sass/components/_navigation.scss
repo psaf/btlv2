@@ -3,7 +3,10 @@
     border: 0;
     border-radius: 0;
 
-    border-bottom: 1px solid #0869a5;
+    box-shadow:
+      0 0 0 3px $color-light-blue,
+      0 0 0 6px $color-light-orange,
+      0 0 0 9px $color-light-yellow;
 }
 
 .navbar-brand {

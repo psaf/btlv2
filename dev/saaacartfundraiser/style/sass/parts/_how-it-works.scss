@@ -1,3 +1,17 @@
+#how-it-works {
+  background: $color-blue;
+
+  color: #fff;
+
+  box-shadow:
+    0 0 0 3px $color-light-yellow,
+    0 0 0 6px $color-light-orange,
+    0 0 0 9px $color-light-blue;
+  &:before {
+    background: $color-light-blue;
+  }
+}
+
 .how-it-works-steps {
   list-style: none;
   padding: 0;
@@ -5,15 +19,17 @@
 
   li {
     position: relative;
-    height: 300px;
+    height: 14em;
     margin-top: 3em;
     margin-bottom: 3em;
 
     .step {
       padding: 1em;
       height: 100%;
-      border: 1px solid $color-dark-orange;
+      background: $color-light-blue;
       border-radius: 10px;
+
+      box-shadow: 0px 4px 1px -2px $color-dark-blue;
     }
 
     &:before {
@@ -24,10 +40,10 @@
       font-size: 4em;
       top: -4rem;
       left: calc(50% - 4.5rem);
-      background: #fff;
+      background: $color-blue;
 
       border-radius: 50%;
-      border: 1px solid $color-dark-orange;
+      // border: 1px solid $color-dark-orange;
 
       content: counter(li-counter);
       counter-increment: li-counter;

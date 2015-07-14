@@ -1,8 +1,8 @@
 #the-art {
-  background: #008e46;
+  background: $color-orange;
 
   &::before {
-    background-color: #00b559;
+    background-color: $color-light-orange;
   }
 
   .top-heading {
