@@ -22,20 +22,14 @@
   overflow-x: hidden;
 }
 
-/*
-    Header
- */
-.header {
-  background-image: url(../images/header-bg.jpg);
-  background-position: top center;
-  background-size: contain;
-  height: 400px;
-}
-
 .side-heading {
   font-size: 7em;
   text-align: center;
   margin: 0;
+}
+
+.sub-heading {
+  font-size: 2em;
 }
 
 @media(max-width:990px) {
@@ -58,13 +52,4 @@ figure img {
 
 .thumbnail im0g {
   width: 100%;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #2072a7;
-  padding: 1em 0;
 }

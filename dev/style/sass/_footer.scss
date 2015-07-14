@@ -24,13 +24,13 @@
           display: inline;
           margin-left:.5em;
           padding-right: .6em;
-          
+
           border-right: 1px solid #fff;
 
           a {
             line-height: 2.5em;
           }
-          
+
           &:first-child {
             margin-left: 0;
           }
@@ -51,7 +51,7 @@
     form {
       margin-bottom: 0;
     }
-    
+
     input {
       padding: .7em;
 
@@ -61,7 +61,7 @@
 
     input[type="email"] {
       width: 80%;
-      
+
       @include border-left-radius(.5em);
     }
 
@@ -78,7 +78,7 @@
       }
     }
   }
-}   
+}
 
 .copyright {
   text-align: center;

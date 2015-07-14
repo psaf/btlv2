@@ -1,0 +1,23 @@
+#the-artists {
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+}
+.artist {
+
+  padding: 1em;
+
+  .artist-descriptor {
+    font-size: .8em;
+    padding-bottom: 1em;
+  }
+}
+
+.artist-photo {
+  border-radius: 5px;
+  border: 2px solid $color-dark-orange;
+}
