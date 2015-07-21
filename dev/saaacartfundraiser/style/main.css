@@ -223,8 +223,13 @@ section {
   background: #fff; }
 
 .sub-heading {
-  margin-bottom: 3em;
-  text-align: center; }
+  margin-bottom: 3em; }
+
+.artist-name-sub-heading {
+  text-align: left; }
+
+.saaac-sub-heading {
+  text-align: right; }
 
 .organization img {
   margin-bottom: 2em; }
