@@ -269,6 +269,56 @@ section {
     background-color: #ff5f2d; }
   #the-art .top-heading {
     color: #fff; }
+  #the-art .sold {
+    display: inline;
+    position: absolute;
+    float: left;
+    border-radius: 5px 0px 0 0;
+    background: #ffbb00;
+    top: -2px;
+    left: 10px;
+    width: 50px;
+    height: 75px;
+    color: #fff;
+    padding: 5px;
+    -webkit-transition: all .2s linear;
+            transition: all .2s linear; }
+    #the-art .sold:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 25px solid #ffbb00;
+      border-right: 50px solid transparent; }
+    #the-art .sold:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 25px solid #ffbb00;
+      border-left: 50px solid transparent; }
+    #the-art .sold span {
+      display: block;
+      position: relative;
+      margin-top: 80px;
+      margin-left: 4px;
+      padding: 5px 60px 5px 20px;
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      -webkit-transform-origin: top left 0;
+          -ms-transform-origin: top left 0;
+              transform-origin: top left 0;
+      border-top: 1px dashed rgba(0, 0, 0, 0.3);
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+      font-family: "proxima-nova", sans-serif;
+      font-weight: bold;
+      letter-spacing: .2em;
+      z-index: 2; }
   #the-art .thumbnail {
     position: relative;
     border: 0;
@@ -283,6 +333,11 @@ section {
       opacity: 100;
       -webkit-transition-delay: 0;
               transition-delay: 0; }
+    #the-art .thumbnail:hover .sold {
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition-delay: 0;
+              transition-delay: 0; }
     #the-art .thumbnail .art-info {
       visibility: hidden;
       opacity: 0;
@@ -295,7 +350,6 @@ section {
       color: #fff;
       border-radius: 10px;
       background: rgba(0, 0, 0, 0.8);
-      box-shadow: 0 0 0 3px #ff5f2d;
       -webkit-transition: all .2s linear;
               transition: all .2s linear; }
       #the-art .thumbnail .art-info h3 {

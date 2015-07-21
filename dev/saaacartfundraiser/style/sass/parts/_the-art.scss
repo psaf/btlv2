@@ -9,6 +9,59 @@
     color: #fff;
   }
 
+  .sold {
+    display: inline;
+    position: absolute;
+    float: left;
+    border-radius: 5px 0px 0 0;
+    background: $color-yellow;
+    top: -2px;
+    left: 10px;
+    width: 50px;
+    height: 75px;
+    color: #fff;
+    padding: 5px;
+    transition: all .2s linear;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 25px solid $color-yellow;
+      border-right: 50px solid transparent;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 25px solid $color-yellow;
+      border-left: 50px solid transparent;
+    }
+
+    span {
+      display: block;
+      position: relative;
+      margin-top: 80px;
+      margin-left: 4px;
+      padding: 5px 60px 5px 20px;
+      transform: rotate(-90deg);
+      transform-origin: top left 0;
+      border-top: 1px dashed rgba(0, 0, 0, .3);
+      border-bottom: 1px dashed rgba(0, 0, 0, .3);
+      font-family: "proxima-nova", sans-serif;
+      font-weight: bold;
+      letter-spacing: .2em;
+      z-index: 2;
+    }
+  }
+
   .thumbnail {
     position: relative;
     border: 0;
@@ -30,6 +83,13 @@
 
         transition-delay: 0;
       }
+
+      .sold {
+        visibility: hidden;
+        opacity: 0;
+
+        transition-delay: 0;
+      }
     }
 
     .art-info {
@@ -47,7 +107,7 @@
       color: #fff;
       border-radius: 10px;
       background: rgba(0, 0, 0, .8);
-      box-shadow: 0 0 0 3px $color-light-orange;
+      // box-shadow: 0 0 0 3px $color-light-orange;
       transition: all .2s linear;
 
       h3 {
