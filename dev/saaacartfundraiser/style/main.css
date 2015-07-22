@@ -282,7 +282,8 @@ section {
     color: #fff;
     padding: 5px;
     -webkit-transition: all .2s linear;
-            transition: all .2s linear; }
+            transition: all .2s linear;
+    box-shadow: 2px 0 1px rgba(255, 187, 0, 0.5); }
     #the-art .sold:before {
       content: "";
       position: absolute;
@@ -291,7 +292,8 @@ section {
       width: 0;
       height: 0;
       border-top: 25px solid #ffbb00;
-      border-right: 50px solid transparent; }
+      border-right: 50px solid transparent;
+      box-shadow: 2px -1px 1px rgba(255, 187, 0, 0.5); }
     #the-art .sold:after {
       content: "";
       position: absolute;
@@ -351,7 +353,8 @@ section {
       border-radius: 10px;
       background: rgba(0, 0, 0, 0.8);
       -webkit-transition: all .2s linear;
-              transition: all .2s linear; }
+              transition: all .2s linear;
+      font-family: "proxima-nova", sans-serif; }
       #the-art .thumbnail .art-info h3 {
         text-align: center;
         margin-top: 0; }

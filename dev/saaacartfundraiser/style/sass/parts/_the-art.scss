@@ -23,6 +23,8 @@
     padding: 5px;
     transition: all .2s linear;
 
+    box-shadow: 2px 0 1px transparentize($color-yellow, .5);
+
     &:before {
       content: "";
       position: absolute;
@@ -32,6 +34,8 @@
       height: 0;
       border-top: 25px solid $color-yellow;
       border-right: 50px solid transparent;
+      box-shadow: 2px -1px 1px transparentize($color-yellow, .5);
+
     }
 
     &:after {
@@ -109,6 +113,8 @@
       background: rgba(0, 0, 0, .8);
       // box-shadow: 0 0 0 3px $color-light-orange;
       transition: all .2s linear;
+
+      font-family: "proxima-nova", sans-serif;
 
       h3 {
         text-align: center;
