@@ -86,6 +86,9 @@ p, ul:not(.nav), address {
   font-size: 4em;
   border-bottom: 2px dashed #fff; }
 
+#how-it-works a {
+  color: #a5d1ee; }
+
 .navbar {
   background: #fff;
   border: 0;
