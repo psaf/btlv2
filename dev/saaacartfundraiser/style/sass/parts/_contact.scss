@@ -14,24 +14,22 @@
 .contact-form {
 
   input, textarea {
-    background-color: $color-dark-yellow;
-    color: #fff;
-
-    &::-webkit-input-placeholder {
-      color: #fff;
-    }
+    font-family: "proxima-nova", sans-serif;
+    background-color: #efefef;
+    border: 0;
 
     &:focus, &:hover, &:active {
       outline: 0px !important;
       -webkit-appearance: none;
       box-shadow: none;
       -webkit-box-shadow: none;
-      border-color: #fff;
-      background: $color-light-yellow;
+      border: 0;
+      background: #fff;
     }
   }
 
   input[type=submit] {
     background: $color-light-yellow;
+    color: #fff;
   }
 }
