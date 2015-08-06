@@ -326,6 +326,7 @@ section {
       z-index: 2; }
   #the-art .thumbnail {
     position: relative;
+    overflow: hidden;
     border: 0;
     padding: 0;
     background: none;
@@ -351,6 +352,19 @@ section {
     #the-art .thumbnail:hover .art-info {
       visibility: visible;
       opacity: 100;
+      bottom: 0;
+      -webkit-transition-delay: 0;
+              transition-delay: 0; }
+    #the-art .thumbnail:hover .zoom-in {
+      visibility: visible;
+      opacity: 100;
+      right: 5px;
+      -webkit-transition-delay: 0;
+              transition-delay: 0; }
+    #the-art .thumbnail:hover .purchase {
+      visibility: visible;
+      opacity: 100;
+      left: 5px;
       -webkit-transition-delay: 0;
               transition-delay: 0; }
     #the-art .thumbnail:hover .sold {
@@ -363,40 +377,73 @@ section {
       opacity: 0;
       -webkit-transition-delay: 0;
               transition-delay: 0; }
+    #the-art .thumbnail .zoom-in {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: 5px;
+      right: -50px;
+      padding: 8px;
+      border-radius: 7px;
+      background: #0869a5;
+      font-size: 1.5em;
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: all .2s ease-in;
+              transition: all .2s ease-in; }
+    #the-art .thumbnail .purchase {
+      visibility: hidden;
+      opacity: 0;
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: -50px;
+      padding: 8px;
+      border-radius: 7px;
+      background: #0869a5;
+      color: #fff;
+      font-family: "proxima-nova", sans-serif;
+      text-decoration: none;
+      -webkit-transition: all .2s ease-in;
+              transition: all .2s ease-in; }
     #the-art .thumbnail .art-info {
       visibility: hidden;
       opacity: 0;
       position: absolute;
-      top: 0;
       left: 0;
+      bottom: -100%;
       padding: 1em;
       width: 100%;
-      height: 100%;
       color: #fff;
-      border-radius: 10px;
-      background: rgba(0, 0, 0, 0.8);
-      -webkit-transition: all .2s linear;
-              transition: all .2s linear;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      background: rgba(0, 0, 0, 0.9);
+      -webkit-transition: all .2s ease-in;
+              transition: all .2s ease-in;
       font-family: "proxima-nova", sans-serif; }
-      #the-art .thumbnail .art-info h3 {
-        text-align: center;
-        margin-top: 0; }
+      #the-art .thumbnail .art-info .title {
+        margin-top: 0;
+        margin-bottom: 5px;
+        line-height: .5em; }
+        #the-art .thumbnail .art-info .title span {
+          display: inline;
+          font-size: .5em; }
       #the-art .thumbnail .art-info span {
         display: block;
-        font-size: 1.3em; }
+        font-size: 1em; }
       #the-art .thumbnail .art-info .year {
-        text-align: center; }
-      #the-art .thumbnail .art-info .size {
-        text-align: center; }
+        position: absolute;
+        top: 1.4em;
+        right: 1em; }
       #the-art .thumbnail .art-info .price {
         position: absolute;
-        bottom: 10px;
-        float: left; }
-      #the-art .thumbnail .art-info .medium {
+        top: 2.7em;
+        right: 1em; }
+      #the-art .thumbnail .art-info .charity {
         position: absolute;
-        bottom: 12px;
-        right: 15px;
-        font-size: 1.1em; }
+        top: 4em;
+        right: 1em;
+        color: #ca3100; }
 
 #faq {
   background: #0869a5;
