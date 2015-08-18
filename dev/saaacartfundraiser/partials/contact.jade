@@ -1,0 +1,32 @@
+section.diag-separator-forward#contact
+  .container
+    h1.top-heading Contact
+    .row
+      .col-md-6
+        address
+          strong South Asian Autism Awareness Center
+          br
+          | 1970 Ellesmere Road Unit 1
+          br
+          | Scarborough, ON
+          br
+          | M1H 2W1
+        iframe(id="map" width="100%" height="450"
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=1970%20Ellesmere%20Road%2C%20ON%2C%20Canada&key=AIzaSyCtl-iJyDCrzI2DCTB-tV0fs0K_Xhsizms")
+      .col-md-6
+        p If you have any questions or comments, please don't hesitate to contact us. We'd be more than happy to help.
+        p If you would like to purchase a painting, please be sure to include the title and the artists name in the message.
+        
+        form.contact-form#contactForm
+          .row
+            .col-md-6
+              .form-group
+                input.form-control(name="name" type="text" placeholder="Name")
+            .col-md-6
+              .form-group
+                input.form-control(name="email" type="text" placeholder="Email")
+          .form-group
+            textarea.form-control(name="message" cols="30" rows="10" placeholder="Message")
+        h2.text-center OR
+        p.text-center Email us at <a href="mailto:info@saaac.org">info@saaac.org</a>

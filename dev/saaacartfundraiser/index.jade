@@ -1,0 +1,51 @@
+doctype html
+html
+  include art-data.jade
+  meta(charset="UTF-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+  
+  title SAAAC Art Fundraiser
+  
+  link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+  link(rel="stylesheet" href="style/lightbox.css")
+  link(rel="stylesheet" href="style/fonts.css")
+  link(rel="stylesheet" href="style/main.css")
+  
+  script(src="//use.typekit.net/xly1ojb.js")
+  script
+    | try{Typekit.load();}catch(e){}
+
+body
+  .wrapper
+  
+    header.header.parallax
+      include partials/navigation.jade
+      .container
+        .flexbox-v-center
+          h1.text-center Help support creative programs for youth with autism with the purchase of original artwork
+
+    include partials/how-it-works.jade
+    
+    include partials/who-we-are.jade
+    
+    include partials/the-artists.jade
+    
+    include partials/the-art.jade
+    
+    include partials/faq.jade
+    
+    include partials/contact.jade
+    
+    footer.footer
+      .container
+        nav.col-md-8
+          ul.nav.navbar-nav
+            include partials/navigation-items.jade
+        .col-md-4
+          p Copyright &copy; SAAAC Creative and Behind The Line
+  
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js")
+  script(src="scripts/imagesloaded.pkgd.min.js")
+  script(src="scripts/lightbox-plus-jquery.min.js")
+  script
+    include scripts/app.js

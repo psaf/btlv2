@@ -1,0 +1,19 @@
+section.diag-separator-forward#the-art
+  .container
+    h1.top-heading The Art
+    .row.grid
+      each art in arts
+        .grid-item.col-xs-12.col-sm-6.col-md-4.col-lg-3
+          .thumbnail
+            img(src="images/arts/#{art.filename}" alt="#{art.title}")
+            span.by #{art.by}
+            div.art-info
+              h3.title #{art.title} <span>by #{art.by}</span>
+              span.year #{art.year}
+              span.size #{art.size_x}" by #{art.size_y}"
+              span.price $#{art.price}
+              span.charity $#{art.charity}
+              span.medium #{art.medium}
+            a.zoom-in(href="images/arts/#{art.filename}" data-lightbox="art")
+              i.icon-search
+            a.purchase(href="#") Purchase

@@ -156,7 +156,7 @@
       border-radius: 7px;
       background: $color-blue;
 
-      font-size: 1.5em;
+      font-size: 1em;
       color: #fff;
 
       text-decoration: none;
@@ -207,12 +207,13 @@
       .title {
         // text-align: center;
         margin-top: 0;
-        margin-bottom: 5px;
+        margin-bottom: 11px;
+        font-size: 1.2em;
         line-height: .5em;
 
         span {
           display: inline;
-          font-size: .5em;
+          font-size: .6em;
         }
       }
       span {

@@ -1,14 +1,21 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var neat = require('node-neat').includePaths;
+var jade = require('gulp-jade');
 var autoprefixer = require('gulp-autoprefixer');
 var connect = require('gulp-connect');
 var livereload = require('gulp-livereload');
 
 gulp.task('html', function() {
-	gulp.src('dev/**/*.html')
-		.pipe(livereload());
-})
+  gulp.src('dev/**/*.html')
+    .pipe(livereload());
+});
+
+gulp.task('template', function() {
+  gulp.src('dev/**/index.jade')
+      .pipe(jade({pretty: true}))
+      .pipe(gulp.dest('dev'));
+});
 
 gulp.task('sass', function() {
    return gulp.src('dev/style/sass/main.scss')
@@ -34,7 +41,7 @@ gulp.task('css', function() {
 })
 
 gulp.task('server', function() {
-	connect.server({root: 'dev'});
+  connect.server({root: 'dev'});
 });
 
 gulp.task('watch', function() {
@@ -42,6 +49,7 @@ gulp.task('watch', function() {
    gulp.watch('dev/style/sass/**/*.scss', ['sass']);
    gulp.watch('dev/saaacartfundraiser/**/*.scss', ['sass-saaacartfundraiser']);
    gulp.watch('dev/**/*.html', ['html']);
+   gulp.watch('dev/**/*.jade', ['template']);
 });
 
 gulp.task('default', ['watch', 'server']);

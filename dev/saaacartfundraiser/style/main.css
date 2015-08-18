@@ -386,7 +386,7 @@ section {
       padding: 8px;
       border-radius: 7px;
       background: #0869a5;
-      font-size: 1.5em;
+      font-size: 1em;
       color: #fff;
       text-decoration: none;
       -webkit-transition: all .2s ease-in;
@@ -423,11 +423,12 @@ section {
       font-family: "proxima-nova", sans-serif; }
       #the-art .thumbnail .art-info .title {
         margin-top: 0;
-        margin-bottom: 5px;
+        margin-bottom: 11px;
+        font-size: 1.2em;
         line-height: .5em; }
         #the-art .thumbnail .art-info .title span {
           display: inline;
-          font-size: .5em; }
+          font-size: .6em; }
       #the-art .thumbnail .art-info span {
         display: block;
         font-size: 1em; }
